@@ -3,12 +3,13 @@ import Front from './assets/components/Front'
 
 const App = () => {
   const [inputText, setinputText] = useState("")
+  const [Todos, setTodos] = useState([])
   return (
     
     <div className='font-af w-screen h-screen bg-slate-700 text-white'>
       
-     {/* <h1>TO-DO LIST {inputText}</h1> */}
-     <Front setinputText={setinputText}/>
+     
+     <Front Todos={Todos} setTodos={setTodos} inputText={inputText} setinputText={setinputText}/>
     </div>
   )
 }
